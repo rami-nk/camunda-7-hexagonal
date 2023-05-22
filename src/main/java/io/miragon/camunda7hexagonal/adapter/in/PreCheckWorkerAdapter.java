@@ -13,7 +13,7 @@ public class PreCheckWorkerAdapter extends CamundaAdapter {
     private final PreCheckUseCase preCheckUseCase;
 
     protected PreCheckWorkerAdapter(ExternalTaskClient externalTaskClient, CamundaDataMapper camundaDataMapper, PreCheckUseCase preCheckUseCase) {
-        super(externalTaskClient, camundaDataMapper, "preCheck");
+        super(externalTaskClient, camundaDataMapper);
         this.preCheckUseCase = preCheckUseCase;
     }
 
@@ -21,5 +21,10 @@ public class PreCheckWorkerAdapter extends CamundaAdapter {
     public void execute(Map<String, Object> data) {
         final PreCheckCommand preCheckCommand = (PreCheckCommand) mapInput(PreCheckCommand.class, data);
         preCheckUseCase.preCheck(preCheckCommand);
+    }
+
+    @Override
+    public String subscriptionTopic() {
+        return "preCheck";
     }
 }

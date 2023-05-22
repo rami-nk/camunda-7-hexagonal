@@ -11,19 +11,19 @@ public abstract class CamundaAdapter {
 
     private final ExternalTaskClient externalTaskClient;
     private final CamundaDataMapper camundaDataMapper;
-    private final String topic;
 
-    protected CamundaAdapter(ExternalTaskClient externalTaskClient, CamundaDataMapper camundaDataMapper, String topic) {
+    protected CamundaAdapter(ExternalTaskClient externalTaskClient, CamundaDataMapper camundaDataMapper) {
         this.externalTaskClient = externalTaskClient;
         this.camundaDataMapper = camundaDataMapper;
-        this.topic = topic;
     }
 
     public abstract void execute(Map<String, Object> data);
 
+    public abstract String subscriptionTopic();
+
     @PostConstruct
     public void _subscribe() {
-        externalTaskClient.subscribe(topic)
+        externalTaskClient.subscribe(subscriptionTopic())
                 .lockDuration(1000)
                 .handler((externalTask, externalTaskService) -> {
 
