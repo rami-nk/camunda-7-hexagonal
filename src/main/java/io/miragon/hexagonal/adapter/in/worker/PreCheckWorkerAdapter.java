@@ -1,8 +1,8 @@
-package io.miragon.camunda7hexagonal.adapter.in.worker;
+package io.miragon.hexagonal.adapter.in.worker;
 
-import io.miragon.camunda7hexagonal.adapter.in.MapToObjectMapper;
-import io.miragon.camunda7hexagonal.application.port.in.PreCheckCommand;
-import io.miragon.camunda7hexagonal.application.port.in.PreCheckUseCase;
+import io.miragon.hexagonal.adapter.in.MapToObjectMapper;
+import io.miragon.hexagonal.application.port.in.PreCheckCommand;
+import io.miragon.hexagonal.application.port.in.PreCheckUseCase;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 

@@ -1,7 +1,7 @@
-package io.miragon.camunda7hexagonal.application.service;
+package io.miragon.hexagonal.application.service;
 
-import io.miragon.camunda7hexagonal.application.port.in.PreCheckCommand;
-import io.miragon.camunda7hexagonal.application.port.in.PreCheckUseCase;
+import io.miragon.hexagonal.application.port.in.PreCheckCommand;
+import io.miragon.hexagonal.application.port.in.PreCheckUseCase;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

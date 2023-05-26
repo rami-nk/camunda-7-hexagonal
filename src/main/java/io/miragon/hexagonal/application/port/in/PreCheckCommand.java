@@ -1,4 +1,4 @@
-package io.miragon.camunda7hexagonal.application.port.in;
+package io.miragon.hexagonal.application.port.in;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

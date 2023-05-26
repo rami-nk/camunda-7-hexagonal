@@ -1,4 +1,4 @@
-package io.miragon.camunda7hexagonal.application.port.in;
+package io.miragon.hexagonal.application.port.in;
 
 public interface PreCheckUseCase {
 

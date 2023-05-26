@@ -1,7 +1,7 @@
-package io.miragon.camunda7hexagonal.adapter.out;
+package io.miragon.hexagonal.adapter.out;
 
-import io.miragon.camunda7hexagonal.adapter.in.worker.ExternalTaskHandler;
-import io.miragon.camunda7hexagonal.adapter.in.ExternalWorker;
+import io.miragon.hexagonal.adapter.in.worker.ExternalTaskHandler;
+import io.miragon.hexagonal.adapter.in.ExternalWorker;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 

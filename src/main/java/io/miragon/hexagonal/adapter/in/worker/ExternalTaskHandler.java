@@ -1,4 +1,4 @@
-package io.miragon.camunda7hexagonal.adapter.in.worker;
+package io.miragon.hexagonal.adapter.in.worker;
 
 import java.util.Map;
 

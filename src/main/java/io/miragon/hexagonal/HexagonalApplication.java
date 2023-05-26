@@ -1,4 +1,4 @@
-package io.miragon.camunda7hexagonal;
+package io.miragon.hexagonal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

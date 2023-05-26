@@ -1,4 +1,4 @@
-package io.miragon.camunda7hexagonal.adapter.in;
+package io.miragon.hexagonal.adapter.in;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
