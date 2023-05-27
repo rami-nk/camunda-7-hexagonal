@@ -1,4 +1,4 @@
-package io.miragon.hexagonal.application.port.in;
+package io.miragon.hexagonal.application.port.in.prepareshipment;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,13 +9,11 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class PreCheckCommand {
+public class PrepareShipmentCommand {
 
     private String firstname;
 
     private String lastname;
 
-    private int age;
-
-    private int income;
+    private String address;
 }
