@@ -24,7 +24,7 @@ public class FlowableProcessDeploymentService {
     @PostConstruct
     public void deployProcess() {
         Deployment deployment = repositoryService.createDeployment()
-                .addClasspathResource("book-request.bpmn20.xml")
+                .addClasspathResource("bpmn/book-request.bpmn20.xml")
                 .deploy();
 
         log.info("Deployed: {}", deployment.getId());
@@ -34,7 +34,7 @@ public class FlowableProcessDeploymentService {
         variables.put("author", "J.K. Rowling");
         variables.put("isbn", "978-3-16-148410-0");
 
-        ProcessInstance processInstance = runtimeService.startProcessInstanceByKey("precheck", variables);
+        ProcessInstance processInstance = runtimeService.startProcessInstanceByKey("book-request", variables);
 
         log.info("Process \"{}\" started", processInstance.getProcessDefinitionName());
     }
